@@ -1,0 +1,1 @@
+strength= 4 #one of the attributes
