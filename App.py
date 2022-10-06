@@ -1,4 +1,5 @@
-import Game, Knight, Wizard
+import Game
+import Wizard
 
 print("Welcome to Wonderland" + '\n' + "Where Dreams and Nightmares Thrive")
 playGame = input("Dare to enter? (Type yes or no) ")
@@ -9,12 +10,16 @@ if playGame == "yes":
     print('\n',"Hello great hero", name, sep=" ")         #instead of using plus and adding spacing sep helped make it concise
 
     Role = input("Choose your Charater" + '\n\n' + "1.Knight 2.Wizard") 
+    
     if Role == "1":
-        AtributeMsg = Knight.KnightAtri()
-        AtributeMsg.Arti()
+        Rolemsg = Game.KnightRole()
+        Rolemsg.role()
+
     if Role == "2":
         AtributeMsg = Wizard.wizardAtri()
         AtributeMsg.Arti()
 else:
     exit()
 
+#AtributeMsg = Knight.KnightAtri()
+        #AtributeMsg.Arti()
