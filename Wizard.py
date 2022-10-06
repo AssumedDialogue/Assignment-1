@@ -5,4 +5,5 @@ class wizardAtri:
         Experience = 2
         print("Your strength is", strength, "Your Intelligeence is", Intelligeence, "Your Experience is", Experience)
         
-
+from App import Role
+if Role == 2:
