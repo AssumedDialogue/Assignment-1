@@ -1,5 +1,4 @@
 import Game
-import Wizard
 
 print("Welcome to Wonderland" + '\n' + "Where Dreams and Nightmares Thrive")
 playGame = input("Dare to enter? (Type yes or no) ")
@@ -16,8 +15,8 @@ if playGame == "yes":
         Rolemsg.role()
 
     if Role == "2":
-        AtributeMsg = Wizard.wizardAtri()
-        AtributeMsg.Arti()
+        Rolestart = Game.WizardRole()
+        Rolestart.role()
 else:
     exit()
 
