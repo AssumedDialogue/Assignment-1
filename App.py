@@ -13,12 +13,14 @@ if playGame == "yes":
     if Role == "1":
         Rolemsg = Game.KnightRole()
         Rolemsg.role()
+        chall = Game.challenges()
+        chall.Challenge1
 
     if Role == "2":
         Rolestart = Game.WizardRole()
         Rolestart.role()
-else:
-    exit()
+    else:
+        exit()
 
 #AtributeMsg = Knight.KnightAtri()
         #AtributeMsg.Arti()
