@@ -1,4 +1,4 @@
-Wstrength = 3 #one of the attributes
-WIntelligeence = 5
-WExperience = 2
+Wstrength = -1 #one of the attributes
+WIntelligeence = 2
+WExperience = -2
         
