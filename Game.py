@@ -1,3 +1,10 @@
+###############
+#Name of programmer: Areeba Minhaj
+#Date: october 2022
+#Programming principles
+#program:adventure game
+#Game: has all the logic and brains and execution code
+##############
 import random
 import Knight
 import Wizard  
@@ -5,25 +12,25 @@ import Wizard
 class KnightRole:
     def role(self):
         print("YOUR A KNIGHT")
-        print("Your strength is:", Knight.Kstrength,'\n',"Your Intelligeence is", Knight.KIntelligeence, '\n',"Your Experience is", Knight.KExperience)
+        print("Your strength is:", Knight.Kstrength,'\n',"Your Intelligeence is", Knight.KIntelligeence, '\n',"Your Experience is", Knight.KExperience) #these are reference codes to get the variables from other files
 
 
 class WizardRole:
     def role(self):
         print("YOUR A WIZARD")
-        print("Your strength is", Wizard.Wstrength,'\n',"Your Intelligeence is",Wizard.WIntelligeence,'\n',"Your Experience is", Wizard.WExperience)
+        print("Your strength is", Wizard.Wstrength,'\n',"Your Intelligeence is",Wizard.WIntelligeence,'\n',"Your Experience is", Wizard.WExperience) #these are reference codes to get the variables from other files
 
 
-class Kchallenges:
-    def Challenge1(self,):
-        YesOrNo = input("Ready for challenge 1")
+class Kchallenges: #the knights challenges
+    def Challenge1(self,): #challenge 1 fight with direwolf relies on strength
+        YesOrNo = input("Ready for challenge 1 (Press enter)") #just as an click next needed to use a variable tho
         if YesOrNo== "":
             YN=input("Challenge 1:"+'\n'+"On your way to defeat the dragon, you get attacked by Direwolf!!"+'\n'+"This challenge will rely on your strength and how strong your attacks are"+'\n\n'+"To attack you must roll the die of faith, you will get three rolls."+'\n'+"The sum of all of those rolls plus your strength will determine if you have won the challenge"+'\n'+"Roll the die of faith (Press enter)")
-            if YN == "":
-                die1 = random.randint(1,6)
+            if YN == "": #just as an click next needed to use a variable tho
+                die1 = random.randint(1,6) #three different dices
                 die2 = random.randint(1,6)
                 die3 = random.randint(1,6)
-                total= (die1 + die2 + die3 + Knight.Kstrength)
+                total= (die1 + die2 + die3 + Knight.Kstrength) # adding up all the points
                 if (total <= 5) and (total >= 1) :
                     print("Roll 1:", die1,'\n',"Roll 2:", die2,'\n',"Roll 3:",die3,'\n\n',"Total score:",total)
                     print("Critcal loss: GAME OVER")
@@ -34,9 +41,9 @@ class Kchallenges:
                 if (total <= 26) and (total >= 20):
                     print("YOU PASSED WITH FLYING COLOURS!")
     def Challenge2(self,):
-        YesOrNo = input("Ready for challenge ")
+        YesOrNo = input("Ready for challenge 2 (Press enter)")
         if YesOrNo== "":
-            YN1=input("Challenge 1:"+'\n'+"After your encounter with the Direwolf, you get attacked by A Shapeshifter"+'\n'+"This challenge will rely on your Intelligence and how strong your attacks are"+'\n\n'+"To attack you must roll the die of faith, you will get three rolls."+'\n'+"The sum of all of those rolls plus your Intelligence will determine if you have won the challenge"+'\n'+"Roll the die of faith (Press enter)")
+            YN1=input("Challenge 2:"+'\n'+"After your encounter with the Direwolf, you get attacked by A Shapeshifter"+'\n'+"This challenge will rely on your Intelligence and how strong your attacks are"+'\n\n'+"To attack you must roll the die of faith, you will get three rolls."+'\n'+"The sum of all of those rolls plus your Intelligence will determine if you have won the challenge"+'\n'+"Roll the die of faith (Press enter)")
             if YN1 == "":
                 die21 = random.randint(1,6)
                 die22 = random.randint(1,6)
@@ -52,9 +59,9 @@ class Kchallenges:
                 if (total2 <= 26) and (total2 >= 20):
                     print("YOU PASSED WITH FLYING COLOURS!")
     def Challenge3(self,):
-        YesOrNo = input("Ready for challenge ")
+        YesOrNo = input("Ready for challenge 3 (Press enter)")
         if YesOrNo== "":
-            YN1=input("Challenge3 1:"+'\n'+"After your encounter with the Direwolf, you arrived at the dragons cave"+'\n'+"The dragon realizes your in its territory and is about to attack you!!!"+"To complete the final challenge your Experience and your attacks are your last hope!!"+'\n\n'+"To attack you must roll the die of faith, you will get three rolls."+'\n'+"The sum of all of those rolls plus your Experience will determine if you have won the game"+'\n'+"Roll the die of faith (Press enter)")
+            YN1=input("Challenge 3:"+'\n'+"After your encounter with the Direwolf, you arrived at the dragons cave"+'\n'+"The dragon realizes your in its territory and is about to attack you!!!"+"To complete the final challenge your Experience and your attacks are your last hope!!"+'\n\n'+"To attack you must roll the die of faith, you will get three rolls."+'\n'+"The sum of all of those rolls plus your Experience will determine if you have won the game"+'\n'+"Roll the die of faith (Press enter)")
             if YN1 == "":
                 die31 = random.randint(1,6)
                 die32 = random.randint(1,6)
@@ -70,9 +77,9 @@ class Kchallenges:
                 if (total3 <= 26) and (total3 >= 20):
                     print("YOU WON WITH FLYING COLOURS!",'\n',"Thank you for your service great hero!")
 
-class Wchallenges:
+class Wchallenges: #challenges for the wizard
     def Challenge1(self,):
-        YesOrNo = input("Ready for challenge 1")
+        YesOrNo = input("Ready for challenge 1 (Press enter)")
         if YesOrNo== "":
             YN=input("Challenge 1:"+'\n'+"on your way to defeat the dragon, you get attacked by Direwolf"+'\n'+"This challenge will rely on your strength and how strong your attacks are"+'\n\n'+"To attack you must roll the die of faith, you will get three rolls."+'\n'+"The sum of all of those rolls plus your strength will determine if you have won the challenge"+'\n'+"Roll the die of faith (Press enter)")
             if YN == "":
@@ -90,9 +97,9 @@ class Wchallenges:
                 if (total <= 26) and (total >= 20):
                     print("YOU PASSED WITH FLYING COLOURS!")
     def Challenge2(self,):
-        YesOrNo = input("Ready for challenge ")
+        YesOrNo = input("Ready for challenge 2 (Press enter)")
         if YesOrNo== "":
-            YN1=input("Challenge 1:"+'\n'+"After your encounter with the Direwolf, you get attacked by A Shapeshifter"+'\n'+"This challenge will rely on your Intelligence and how strong your attacks are"+'\n\n'+"To attack you must roll the die of faith, you will get three rolls."+'\n'+"The sum of all of those rolls plus your Intelligence will determine if you have won the challenge"+'\n'+"Roll the die of faith (Press enter)")
+            YN1=input("Challenge 2:"+'\n'+"After your encounter with the Direwolf, you get attacked by A Shapeshifter"+'\n'+"This challenge will rely on your Intelligence and how strong your attacks are"+'\n\n'+"To attack you must roll the die of faith, you will get three rolls."+'\n'+"The sum of all of those rolls plus your Intelligence will determine if you have won the challenge"+'\n'+"Roll the die of faith (Press enter)")
             if YN1 == "":
                 die21 = random.randint(1,6)
                 die22 = random.randint(1,6)
@@ -108,9 +115,9 @@ class Wchallenges:
                 if (total2 <= 26) and (total2 >= 20):
                     print("YOU PASSED WITH FLYING COLOURS!")
     def Challenge3(self,):
-        YesOrNo = input("Ready for challenge ")
+        YesOrNo = input("Ready for challenge 3 (Press enter)")
         if YesOrNo== "":
-            YN1=input("Challenge3 1:"+'\n'+"After your encounter with the Direwolf, you arrived at the dragons cave"+'\n'+"The dragon realizes your in its territory and is about to attack you!!!"+"To complete the final challenge your Experience and your attacks are your last hope!!"+'\n\n'+"To attack you must roll the die of faith, you will get three rolls."+'\n'+"The sum of all of those rolls plus your Experience will determine if you have won the game"+'\n'+"Roll the die of faith (Press enter)")
+            YN1=input("Challenge 3:"+'\n'+"After your encounter with the Direwolf, you arrived at the dragons cave"+'\n'+"The dragon realizes your in its territory and is about to attack you!!!"+"To complete the final challenge your Experience and your attacks are your last hope!!"+'\n\n'+"To attack you must roll the die of faith, you will get three rolls."+'\n'+"The sum of all of those rolls plus your Experience will determine if you have won the game"+'\n'+"Roll the die of faith (Press enter)")
             if YN1 == "":
                 die31 = random.randint(1,6)
                 die32 = random.randint(1,6)
